@@ -1,3 +1,5 @@
+![Screenshot][screenshot1.png]
+
 This project is currently configured to run on Microsoft Visual Studio 2012 or newer.
 We recommend that you download the latest version of Visual Studio Community to run this project (it's free!).
 
