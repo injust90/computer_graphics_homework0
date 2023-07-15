@@ -143,7 +143,9 @@ void display(void)
 		const GLfloat small[] = { 0.2f, 0.2f, 0.2f, 1 };
 		const GLfloat high[] = { 100 };
 		const GLfloat zero[] = { 0.0, 0.0, 0.0, 1.0 };
-		const GLfloat light_specular[] = { 1, 0.5, 0, 1 };
+		
+		//const GLfloat light_specular[] = { 1, 0.5, 0, 1 };		
+		const GLfloat light_specular[] = { 1, 1, 0, 1 };
 		const GLfloat light_specular1[] = { 0, 0.5, 1, 1 };
 		const GLfloat light_direction[] = { 0.5, 0, 0, 0 }; // Dir light 0 in w 
 		const GLfloat light_position1[] = { 0, -0.5, 0, 1 };
@@ -177,7 +179,8 @@ void display(void)
 
 	}
 	//  ** NEW ** Put a teapot in the middle that animates 
-	glUniform3f(colorPos, 0.0f, 1.0f, 1.0f);
+	 glUniform3f(colorPos, 0.0f, 1.0f, 1.0f);
+
 	//  ** NEW ** Put a teapot in the middle that animates
 	pushMatrix(modelview);
 	modelview = modelview * glm::translate(identity, glm::vec3(teapotloc, 0.0, 0.0));
